@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+video.backgrndvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    video.backgrndvideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    video.backgrndvideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+div.Sectors {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav.MenuBar {
+    width: 70px;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.788);
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    font-size: 10px;
+    z-index: 2;
+
+}
+
+a.Navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: inherit
+}
+
+a.Navigate:hover {
+    scale: 110%;
+    cursor: pointer;
+}
+
+a.Navigate:active {
+    scale: 90%;
+    cursor: pointer;
+}
+
+a.Navigate img  {
+    margin-top: 10px;
+    width: 35px;
+}
+
+img.Resume {
+    width: 50px;
+    margin: 1px;
+}
+
+a.Navigate p  { 
+    margin: 0;
+    width: 52px;
+    text-align: center;
+}
+
+
+div.COL {
+    overflow-x: hidden;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header.Main {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0px;
+    left: 70px;
+    right: 0px;
+    background-image: linear-gradient(to right,rgba(51, 51, 51, 0.788),rgb(46, 46, 46));
+    z-index: 2;
+
+}
+
+div.Content {
+    overflow-x: hidden;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
